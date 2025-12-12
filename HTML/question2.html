@@ -4,36 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>Question #2 - Form and Table</title>
+    <title>Question #2 - Form and Table</title>
+    <link rel="stylesheet" href="../CSS/styles2.css">
 </head>
-<link rel="stylesheet" href="../CSS/styles2.css">
 
 <body>
 
-    <h2>Product Entry Form</h2>
+    <h1>Product Entry Form</h1>
 
     <form id="productForm">
         <label>Product Name:</label>
         <input type="text" id="productName"><br><br>
 
         <label>Select Category:</label>
-        <select id="categorySelect"></select><br><br>
+        <select id="categoryDropdown"></select><br><br>
 
         <label>Select Condition:</label><br>
-        <div id="conditionOptions"></div><br>
+        <div id="conditionRadios"></div><br>
 
-        <button type="submit">Add Product</button>
+        <button type="submit">Add Product</button><br>
     </form>
 
     <h3>Product List</h3>
     <table id="productTable" border="1">
-        <tr>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Condition</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Condition</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
-
+    <br>
+    <button type="button" id="clearButton">Clear Form</button>
     <script src="../JavaScript/question2.js"></script>
 </body>
 
